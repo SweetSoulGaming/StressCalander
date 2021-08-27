@@ -4,20 +4,22 @@
 //for (var i= 0; i < elements.length; i++) {
 //    elements[i].style.color = "red";
 //}
-var saveBtn = document.getElementById("saveBtn");
+var saveBtn = document.querySelector("btn");
 var past = document.querySelector("past");
 var present = document.querySelector("present")
-var future = document.querySelector("future");
-var textarea = document.getElementsByClassName("description")
+//var future = document.querySelector("future");
+var hour = document.getElementsByClassName("#description")
+var timer = document.querySelector("time");
 
-let saveBtn = window.localStorage;
-document.getElementById("saveBtn").innerHTML = text.length;
+let saveBtn = window.localStorage.getItem("btn");
+saveBtn.textContent = btn;
 
-function textClick() {
-    description.textContent = saveBtn;
+
+function textClick(event) {
+    ("<button>").textContent = saveBtn;
     console.log(saveBtn);
 }
-description.addEventListner("click", function() {
+saveBtn.addEventListner("click", function(event) {
 
 }
 
